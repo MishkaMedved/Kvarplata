@@ -13,7 +13,6 @@ object HomeworkOne {
   }
 
   def pow(num: Int): Int = num * num
-
   def square(rad: Int): Double = 3.14 * pow(rad)
   def convert(degrees: Double): Unit = {
     val fahrenheit = degrees *(9/5)+32

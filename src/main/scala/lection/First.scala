@@ -67,8 +67,7 @@ object TypesAndAllALL extends App {
 
   //def name (a:Int): int ={}
   def sum(x: Int, y: Int): Int = x + y
-
-  def sum(x: Int)(y: Int): Int = x + y
+  def sum2(x: Int)(y: Int): Int = x + y
 
   //type = function
   val aSum: (Int, Int) => Int = (x: Int, y: Int) => x + y
@@ -80,7 +79,7 @@ object TypesAndAllALL extends App {
 
   def div(x: Int, y: Int): Int = x / y
 
-  val v = sum(1)(_) // curry
+  val v = sum2(1)(_) // curry
   val v1 = v(2) // 3
 
   println(v1)
